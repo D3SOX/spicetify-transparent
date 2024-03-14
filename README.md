@@ -12,7 +12,7 @@ curl -fsSL https://raw.githubusercontent.com/D3SOX/spicetify-transparent/master/
     
 ### 📃 Manual Installation
 
-Run these commands ubt your `Themes` folder in `.spicetify` to apply:
+Run these commands inside your `Themes` folder in `.spicetify` to apply:
     
 ```powershell
 git clone https://github.com/D3SOX/spicetify-transparent Transparent
