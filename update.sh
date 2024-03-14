@@ -15,8 +15,10 @@ elif [ -z "$git_diff" ]; then
     echo "Pulling latest changes..."
 # when other files where modified
 else
-   echo "You modified the following files: $git_diff. You should only modify the user.css file. Please restore or commit your changes and try again."
-   exit
+    echo "You modified the following files:"
+    echo "$git_diff"
+    echo "You should only modify the user.css file. Please restore or commit your changes and try again."
+    exit
 fi
 
 git pull
