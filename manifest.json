@@ -1,0 +1,20 @@
+{
+    "name": "Transparent",
+    "description": "My transparent spicetify theme",
+    "readme": "README.md",
+    "usercss": "user.css",
+    "schemes": "color.ini",
+    "authors": [
+        {
+            "name": "Astromations",
+            "url": "https://github.com/Astromations"
+        },
+        {
+            "name": "D3SOX",
+            "url": "https://github.com/D3SOX"
+        }
+    ],
+    "tags": [
+        "transparent"
+    ]
+}
