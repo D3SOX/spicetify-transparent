@@ -1,13 +1,15 @@
-/* WARNING: If you changed the background image you might have to play with these values a bit */
 :root {
+  /* If you want to change it go ahead but it's not guaranteed to look good with all images on the default settings */
+ --bg-image: url(https://i.imgur.com/JEx9zSx.jpeg);
+
+  /* WARNING: If you changed the background image you might have to play with these values a bit */
+
   /* used for hover / focus */
   --bg-more-opaque: rgba(255, 255, 255, 0.2);
   /* used as active indicator and controls bg */
   --bg-little-opaque: rgba(255, 255, 255, 0.1);
   /* used to create a layering effect */
   --bg-dark-more-opaque: rgba(0, 0, 0, 0.2);
-   /* If you want to change it go ahead but it's not guaranteed to look good with all images on the default settings */
-  --bg-image: url(https://i.imgur.com/JEx9zSx.jpeg);
 }
 
 /*-------------------
