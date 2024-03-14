@@ -24,28 +24,10 @@ MY FIXES
 /*-------------------
 BACKGROUND IMAGE
 -------------------*/
-.Root > div:first-child {
-  position: fixed;
-  left: 0;
-  right: 0;
-  display: block;
-  background: url(https://i.imgur.com/JEx9zSx.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-  filter: blur(25px);
-}
-
-/*-------------------
-ALBUM ART BACKGROUND
--------------------*/
 
 .Root__top-container::before {
   content: "";
-  background: transparent;
+  background: url(https://i.imgur.com/JEx9zSx.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -62,6 +44,7 @@ ALBUM ART BACKGROUND
   transition: background var(--transition);
   opacity: 0.55;
   z-index: 0;
+  filter: blur(25px);
 }
 
 /*-------------------------
