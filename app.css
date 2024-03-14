@@ -1,3 +1,9 @@
+:root {
+  /* used for hover / focus */
+  --bg-little-opaque: rgba(255, 255, 255, 0.2);
+  --bg-more-opaque: rgba(255, 255, 255, 0.1);
+}
+
 /*-------------------
 MY FIXES
 -------------------*/
@@ -269,6 +275,14 @@ TOP BAR
   background-color: transparent !important;
 }
 
+.main-topBar-button:hover,
+.main-topBar-buddyFeed:hover,
+.main-userWidget-box:focus,
+.main-userWidget-box:hover,
+.main-userWidget-box[data-context-menu-open=true] {
+  background-color: var(--bg-little-opaque);
+}
+
 .nav-ylx .main-trackList-trackListHeaderStuck.main-trackList-trackListHeader,
 .main-trackList-trackListHeader.main-trackList-trackListHeaderStuck {
   background: none;
@@ -300,7 +314,7 @@ svg {
 
 .queue-tabBar-active,
 .lyrics-tabBar-active {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--bg-more-opaque);
 }
 
 .queue-tabBar-headerItemLink,
@@ -314,7 +328,7 @@ svg {
 .queue-tabBar-headerItemLink:hover,
 .lyrics-tabBar-headerItemLink:hover {
   padding: 2px 16px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-little-opaque);
   height: 32px;
 }
 
@@ -750,21 +764,13 @@ MARKETPLACE
 
 .marketplace-tabBar-headerItemLink.marketplace-tabBar-active,
 .Dropdown-control {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--bg-more-opaque);
   border-radius: 4px;
   height: 32px;
 }
 
-.marketplace-tabBar-headerItemLink {
-  padding: 4px 16px;
-  transition: background-color 0.3s ease;
-  height: 32px;
-}
-
 .Dropdown-control {
-  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 6px !important;
-  height: 32px;
   padding: 6px 36px 8px 16px;
   transition: all 0.3s ease;
   font-size: 0.875rem;
@@ -775,9 +781,15 @@ MARKETPLACE
   top: 15px;
 }
 
+.marketplace-tabBar-headerItemLink {
+  padding: 4px 16px;
+  transition: background-color 0.3s ease;
+  height: 32px;
+}
+
 .marketplace-tabBar-headerItemLink:hover {
   padding: 4px 16px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-little-opaque);
 }
 
 .main-cardHeader-text {
@@ -786,12 +798,16 @@ MARKETPLACE
 
 .searchbar-bar {
   border-style: none;
-  background-color: rgba(0, 0, 0, 0.2) !important;
+  background-color: var(--bg-more-opaque) !important;
   height: 32px;
 }
 
+.searchbar-bar:focus {
+  background-color: var(--bg-little-opaque) !important;
+}
+
 .marketplace-header-icon-button {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-more-opaque);
 }
 
 #marketplace-settings-button {
@@ -800,7 +816,7 @@ MARKETPLACE
 }
 
 .marketplace-header-icon-button:hover {
-  background-color: rgba(255, 255, 255, 0.01);
+  background-color: var(--bg-little-opaque);
 }
 
 .marketplace-header:has(.marketplace-header__left .marketplace-sortBox-header) {
@@ -821,7 +837,7 @@ MARKETPLACE
 }
 
 .Dropdown-control:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-little-opaque);
 }
 
 /*-----------------
