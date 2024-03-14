@@ -99,12 +99,6 @@ SIDEBAR
   --background-base: transparent !important;
 }
 
-.main-buddyFeed-header {
-  padding-top: 0px !important;
-  padding-bottom: 0px;
-  padding-inline-start: 3px;
-}
-
 .hd6a3g_3QyF8MFL0wWs1 {
   background: none !important;
 }
@@ -345,7 +339,7 @@ svg {
 .main-buddyFeed-scrollBarContainer .os-viewport-native-scrollbars-invisible {
   -webkit-mask-image: linear-gradient(
     transparent 1%,
-    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 1) 4%,
     rgba(0, 0, 0, 1) 96%,
     transparent 100%
   );
