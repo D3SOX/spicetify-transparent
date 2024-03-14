@@ -1,7 +1,11 @@
+/* WARNING: If you changed the background image you might have to play with these values a bit */
 :root {
   /* used for hover / focus */
-  --bg-little-opaque: rgba(255, 255, 255, 0.2);
-  --bg-more-opaque: rgba(255, 255, 255, 0.1);
+  --bg-more-opaque: rgba(255, 255, 255, 0.2);
+  /* used as active indicator and controls bg */
+  --bg-little-opaque: rgba(255, 255, 255, 0.1);
+  /* used to create a layering effect */
+  --bg-dark-more-opaque: rgba(0, 0, 0, 0.2);
 }
 
 /*-------------------
@@ -33,6 +37,7 @@ BACKGROUND IMAGE
 
 .Root__top-container::before {
   content: "";
+  /* If you want to change it go ahead but it's not guaranteed to look good with all images on the default settings */
   background: url(https://i.imgur.com/JEx9zSx.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,7 +130,7 @@ WHAT'S NEW
   --spice-highlight: ;
   --background-elevated-press: ;
   --background-press: ;
-  background-color: rgba(0, 0, 0, 0.2) !important;
+  background-color: var(--bg-dark-more-opaque) !important;
 }
 
 .main-whatsNewFeed-list {
@@ -280,7 +285,7 @@ TOP BAR
 .main-userWidget-box:focus,
 .main-userWidget-box:hover,
 .main-userWidget-box[data-context-menu-open=true] {
-  background-color: var(--bg-little-opaque);
+  background-color: var(--bg-more-opaque);
 }
 
 .nav-ylx .main-trackList-trackListHeaderStuck.main-trackList-trackListHeader,
@@ -314,7 +319,7 @@ svg {
 
 .queue-tabBar-active,
 .lyrics-tabBar-active {
-  background-color: var(--bg-more-opaque);
+  background-color: var(--bg-little-opaque);
 }
 
 .queue-tabBar-headerItemLink,
@@ -328,7 +333,7 @@ svg {
 .queue-tabBar-headerItemLink:hover,
 .lyrics-tabBar-headerItemLink:hover {
   padding: 2px 16px;
-  background-color: var(--bg-little-opaque);
+  background-color: var(--bg-more-opaque);
   height: 32px;
 }
 
@@ -415,7 +420,7 @@ ALBUM VIEW
 --------*/
 
 .x-album-releasesDropdown {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-dark-more-opaque);
 }
 
 .nav-ylx .artist-artistDiscography-headerContainer,
@@ -463,7 +468,7 @@ HOME VIEW
 }
 
 .view-homeShortcutsGrid-shortcut {
-  background-color: rgba(0, 0, 0, 0.2) !important;
+  background-color: var(--bg-dark-more-opaque) !important;
   border-radius: 4px;
   transition: transform 0.2s ease;
   box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.1);
@@ -484,7 +489,7 @@ HOME VIEW
 
 .main-card-card {
   background: none !important;
-  background-color: rgba(0, 0, 0, 0.2) !important;
+  background-color: var(--bg-dark-more-opaque) !important;
   transition: transform 0.2s ease;
   border-radius: 6px;
   box-shadow: 4px 0px 15px rgb(0 0 0 / 20%);
@@ -531,12 +536,12 @@ HOME VIEW
 }
 
 .main-coverSlotCollapsed-expandButton {
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--bg-dark-more-opaque);
 }
 
 .main-coverSlotCollapsed-expandButton:focus,
 .main-coverSlotCollapsed-expandButton:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--bg-dark-more-opaque);
   transform: scale(0.81);
 }
 
@@ -550,7 +555,7 @@ SETTINGS
 ------*/
 
 .x-settings-equalizerSection {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-dark-more-opaque);
   border-radius: 6px;
 }
 
@@ -764,7 +769,7 @@ MARKETPLACE
 
 .marketplace-tabBar-headerItemLink.marketplace-tabBar-active,
 .Dropdown-control {
-  background-color: var(--bg-more-opaque);
+  background-color: var(--bg-little-opaque);
   border-radius: 4px;
   height: 32px;
 }
@@ -789,7 +794,7 @@ MARKETPLACE
 
 .marketplace-tabBar-headerItemLink:hover {
   padding: 4px 16px;
-  background-color: var(--bg-little-opaque);
+  background-color: var(--bg-more-opaque);
 }
 
 .main-cardHeader-text {
@@ -798,16 +803,16 @@ MARKETPLACE
 
 .searchbar-bar {
   border-style: none;
-  background-color: var(--bg-more-opaque) !important;
+  background-color: var(--bg-little-opaque) !important;
   height: 32px;
 }
 
 .searchbar-bar:focus {
-  background-color: var(--bg-little-opaque) !important;
+  background-color: var(--bg-more-opaque) !important;
 }
 
 .marketplace-header-icon-button {
-  background-color: var(--bg-more-opaque);
+  background-color: var(--bg-little-opaque);
 }
 
 #marketplace-settings-button {
@@ -816,7 +821,7 @@ MARKETPLACE
 }
 
 .marketplace-header-icon-button:hover {
-  background-color: var(--bg-little-opaque);
+  background-color: var(--bg-more-opaque);
 }
 
 .marketplace-header:has(.marketplace-header__left .marketplace-sortBox-header) {
@@ -831,13 +836,13 @@ MARKETPLACE
 }
 
 #marketplace-readme {
-  background: rgba(0, 0, 0, 0.2) !important;
+  background: var(--bg-dark-more-opaque) !important;
   border-radius: 8px !important;
   padding: 20px !important;
 }
 
 .Dropdown-control:hover {
-  background-color: var(--bg-little-opaque);
+  background-color: var(--bg-more-opaque);
 }
 
 /*-----------------
