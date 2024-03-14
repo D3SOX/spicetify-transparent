@@ -1,8 +1,8 @@
-# Transparent 
+# Spicetify transparent theme
 
 A translucent theme based on <a href="https://github.com/Astromations/Hazy">Hazy</a> made for the old Spotify design (Before Library X migration).
     
-### ⬇️ Automatic Installation ⬇️
+### ⬇️ Automatic Installation
 
 macOS and Linux
 
@@ -10,7 +10,7 @@ macOS and Linux
 curl -fsSL https://raw.githubusercontent.com/D3SOX/spicetify-translucent/master/install.sh | sh
 ```    
     
-### 📃 Manual Installation 📃
+### 📃 Manual Installation
 
 Download the the repo and put `user.css`, `theme.js` and `color.ini` into a new folder named `Transparent`, and place this folder into your `Themes` folder in `.spicetify`.
 Then run these commands to apply:
