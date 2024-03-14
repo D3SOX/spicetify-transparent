@@ -6,6 +6,8 @@
   --bg-little-opaque: rgba(255, 255, 255, 0.1);
   /* used to create a layering effect */
   --bg-dark-more-opaque: rgba(0, 0, 0, 0.2);
+   /* If you want to change it go ahead but it's not guaranteed to look good with all images on the default settings */
+  --bg-image: url(https://i.imgur.com/JEx9zSx.jpeg);
 }
 
 /*-------------------
@@ -37,8 +39,7 @@ BACKGROUND IMAGE
 
 .Root__top-container::before {
   content: "";
-  /* If you want to change it go ahead but it's not guaranteed to look good with all images on the default settings */
-  background: url(https://i.imgur.com/JEx9zSx.jpeg);
+  background: var(--bg-image);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
