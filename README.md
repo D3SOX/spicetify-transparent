@@ -4,17 +4,13 @@ A translucent theme based on <a href="https://github.com/Astromations/Hazy">Hazy
     
 ### ⬇️ Automatic Installation ⬇️
 
----
-
-macOS and Linux -> **Bash**:
+macOS and Linux
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/D3SOX/spicetify-translucent/master/install.sh | sh
 ```    
     
 ### 📃 Manual Installation 📃
-
----
 
 Download the the repo and put `user.css`, `theme.js` and `color.ini` into a new folder named `Transparent`, and place this folder into your `Themes` folder in `.spicetify`.
 Then run these commands to apply:
