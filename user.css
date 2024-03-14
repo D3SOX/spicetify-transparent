@@ -697,32 +697,6 @@ BLOOM LYRICS
   display: none;
 }
 
-/*-------
-SCROLLBAR
--------*/
-
-.os-scrollbar-handle {
-  border-radius: 50px;
-}
-
-.os-theme-spotify > .os-scrollbar-vertical {
-  margin: 12px 2px 12px 0;
-}
-
-.os-scrollbar-vertical {
-  width: 6px !important;
-  transition: width 150ms ease !important;
-}
-
-.os-scrollbar-vertical:hover,
-.os-scrollbar-vertical:active {
-  width: 9px !important;
-}
-
-.os-scrollbar-horizontal {
-  display: none;
-}
-
 /*-------------------
 EXPERIMENTAL FEATURES
 -------------------*/
