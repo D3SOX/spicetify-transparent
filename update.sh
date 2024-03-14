@@ -7,7 +7,7 @@ stashed=false
 
 # check if only user.css was modified
 if [ "$git_diff" = "user.css" ]; then
-    echo "Stashing user.css changes..."
+    echo "Stashing user.css changes"
     git stash
     stashed=true
 # when no files where modified
@@ -22,8 +22,22 @@ fi
 git pull
 # unstash if stashed
 if [ "$stashed" = true ]; then
+    echo "Trying to restore your changes to user.css"
     git stash pop
+    return_code=$?
+    if [ $return_code -ne 0 ]; then
+        echo "Failed to restore your changes to user.css"
+        cp user.css user.css.bak
+        git restore --staged user.css
+        git restore user.css
+        echo "Saved a copy of the conflicted user.css file to user.css.bak and restored the original"
+        exit
+    else
+        echo "Restored user.css changes successfully"
+    fi
 fi
 
-echo "Applying..."
+echo "Applying"
 spicetify apply -n
+
+echo "All done!"
