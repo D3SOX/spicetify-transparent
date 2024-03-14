@@ -551,11 +551,6 @@ SETTINGS
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.x-toggle-indicatorWrapper,
-.x-toggle-indicatorWrapper:hover {
-  background-color: rgba(0, 255, 0, 0.2);
-}
-
 input:hover:not([disabled], :active) ~ .x-toggle-indicatorWrapper {
   background-color: rgb(255, 255, 255 / 10%);
 }
