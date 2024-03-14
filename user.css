@@ -107,36 +107,13 @@ NAVIGATION BAR
   );
 }
 
-.main-yourLibraryX-entryPoints {
-  background-color: var(--backdrop) !important;
-}
-
-.main-yourLibraryX-header .main-yourLibraryX-collapseButtonWrapper {
-  color: var(--spice-subtext);
-}
-
 .main-navBar-navBarLinkActive,
 .main-collectionLinkButton-selected {
   border-radius: 8px !important;
 }
 
-.main-yourLibraryX-libraryContainer {
-  --background-highlight: rgba(255, 255, 255, 0.05) !important;
-  --background-press: rgba(255, 255, 255, 0.05);
-}
-
 .main-rootlist-wrapper {
   --spice-rgb-shadow: !important;
-}
-
-.main-yourLibraryX-isScrolled {
-  -webkit-box-shadow: 0 8px 6px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.1s ease;
-}
-
-.main-yourLibraryX-listRowEntityImage {
-  box-shadow: -2px 4px 6px 2px rgb(0 0 0 / 14%);
 }
 
 /*-----
@@ -410,8 +387,7 @@ MISCELLANEOUS
 
 .queue-tabBar-active,
 .lyrics-tabBar-active {
-  background-color: var(--backdrop);
-  height: 32px;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .queue-tabBar-headerItemLink,
