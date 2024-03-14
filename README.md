@@ -9,7 +9,7 @@ A translucent theme based on <a href="https://github.com/Astromations/Hazy">Hazy
 macOS and Linux -> **Bash**:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Astromations/Hazy/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/D3SOX/spicetify-translucent/master/install.sh | sh
 ```    
     
 ### 📃 Manual Installation 📃

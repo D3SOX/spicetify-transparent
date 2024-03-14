@@ -5,7 +5,7 @@ set -e
 theme_name="Transparent"
 
 # Download URL
-theme_url="https://raw.githubusercontent.com/D3SOX/spicetify-transparent/main"
+theme_url="https://raw.githubusercontent.com/D3SOX/spicetify-transparent/master"
 
 # Setup directories to download to
 spice_dir="$(dirname "$(spicetify -c)")"
