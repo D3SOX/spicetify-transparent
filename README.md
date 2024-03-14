@@ -17,7 +17,7 @@ Run these commands inside your `Themes` folder in `.spicetify` to apply:
 ```powershell
 git clone https://github.com/D3SOX/spicetify-transparent Transparent
 spicetify config current_theme Transparent
-spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 inject_theme_js 1
+spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
 spicetify apply
 ```
 
