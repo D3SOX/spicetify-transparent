@@ -1,6 +1,6 @@
 # Transparent 
 
-A translucent theme based on <a href="https://github.com/Astromations/Hazy">Hazy</a>.
+A translucent theme based on <a href="https://github.com/Astromations/Hazy">Hazy</a> made for the old Spotify design (Before Library X migration).
     
 ### ⬇️ Automatic Installation ⬇️
 

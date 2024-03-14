@@ -1,29 +1,29 @@
 :root {
   --backdrop: transparent;
-  --spice-text: #ffffff;
-}
-
-/*-------------------
-MY FIXES
--------------------*/
-
-.main-navBar-entryPoints {
-  padding-top: 0 !important;
-}
-
-.main-navBar-navBar {
-  padding-top: 10px !important;
 }
 
 svg {
   filter: drop-shadow(-2px 2px 2px rgb(0 0 0 / 15%));
 }
 
-/* broken in old design */
+/*-------------------
+MY FIXES
+-------------------*/
+
+/* move home to the top */
+.main-navBar-entryPoints {
+  padding-top: 0 !important;
+}
+.main-navBar-navBar {
+  padding-top: 10px !important;
+}
+
+/* full screen with beautiful lyrics is broken in old design */
 #BeautifulLyricsFullscreenButton {
   display: none;
 }
 
+/* remove playlist labels button */
 .main-nowPlayingBar-extraControls
   button:has([d="M8 0a8 8 0 100 16A8 8 0 008 0zm3.669 11.539a.498.498 0 01-.686.166c-1.878-1.148-4.243-1.408-7.028-.772a.499.499 0 01-.222-.972c3.048-.696 5.662-.396 7.77.892a.5.5 0 01.166.686zm.979-2.178a.624.624 0 01-.858.205c-2.15-1.322-5.428-1.705-7.972-.932a.624.624 0 11-.362-1.194c2.905-.882 6.517-.455 8.987 1.063a.624.624 0 01.205.858zm.084-2.269C10.153 5.561 5.9 5.42 3.438 6.167a.748.748 0 11-.434-1.432c2.826-.857 7.523-.692 10.492 1.07a.748.748 0 01-.764 1.287z"]) {
   display: none;
@@ -902,7 +902,6 @@ EXPERIMENTAL FEATURES
   border: none !important;
   background-color: rgba(var(--spice-rgb-selected-row), 0.1) !important;
   padding: 10px 36px;
-  color: var(--spice-text);
   width: 100%;
 }
 
@@ -946,7 +945,6 @@ MARKETPLACE
 .Dropdown-control {
   background-color: var(--backdrop);
   border-radius: 6px !important;
-  color: var(--spice-text);
   height: 32px;
   padding: 6px 36px 8px 16px;
   transition: all 0.3s ease;
