@@ -21,4 +21,19 @@ spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
 spicetify apply
 ```
 
+### ⬇️ Automatic Updates
 
+macOS and Linux
+
+```bash
+cd "$(dirname "$(spicetify -c)")"/Themes/Transparent && ./update.sh
+``` 
+
+### 📃 Manual Updates
+
+Run these commands inside your `.spicetify/Themes/Transparent` folder:
+
+```powershell
+git pull
+spicetify apply
+```

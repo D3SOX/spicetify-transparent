@@ -38,6 +38,6 @@ if [ "$stashed" = true ]; then
 fi
 
 echo "Applying"
-spicetify apply -n
+spicetify apply
 
 echo "All done!"
