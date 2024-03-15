@@ -1,6 +1,6 @@
 # Spicetify transparent theme
 
-A transparent theme based on <a href="https://github.com/Astromations/Hazy">Hazy</a> made for the old Spotify design (Before Library X migration).
+A transparent theme based on <a href="https://github.com/Astromations/Hazy">Hazy</a> made for the old Spotify design (Before Library X migration) with a more minimal approach.
 
 See [this repo](https://github.com/D3SOX/spotify-old-library-linux) if you're on Linux and looking for a way to get the old library
 
