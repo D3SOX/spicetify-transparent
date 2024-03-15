@@ -4,6 +4,7 @@
  /* Change them inside user.css instead */
 :root {
   --bg-image: url(https://i.imgur.com/JEx9zSx.jpeg);
+  --bg-filter: blur(25px);
   --bg-more-opaque: rgba(255, 255, 255, 0.2);
   --bg-little-opaque: rgba(255, 255, 255, 0.1);
   --bg-dark-more-opaque: rgba(0, 0, 0, 0.2);
@@ -55,7 +56,7 @@ BACKGROUND IMAGE
   transition: background var(--transition);
   opacity: 0.55;
   z-index: 0;
-  filter: blur(25px);
+  filter: var(--bg-filter);
 }
 
 /*-------------------------
@@ -366,7 +367,7 @@ svg {
 
 .main-popper-container {
   background-color: rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(25px) !important;
+  backdrop-filter: var(--bg-filter) !important;
 }
 
 .hcuLp8V4uEEfWZ4k6aLV {
@@ -859,7 +860,7 @@ div#context-menu:before,
   right: 0;
   bottom: 0;
   border-radius: 8px !important;
-  backdrop-filter: blur(25px);
+  backdrop-filter: var(--bg-filter);
 }
 
 .main-contextMenu-menu {
