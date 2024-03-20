@@ -33,6 +33,11 @@ MY FIXES
   display: none;
 }
 
+/* fix queue control icon color */
+.queueControl-wrapper svg {
+  fill: white !important;
+}
+
 /*-------------------
 BACKGROUND IMAGE
 -------------------*/
